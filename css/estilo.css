@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Cutive+Mono&display=swap');
+:root {
+
+    /* El fondo de la página */
+    --imgbg: url(https://marmotamaps.com/de/fx/wallpaper/download/faszinationen/Marmotamaps_Wallpaper_Berchtesgaden_Desktop_1920x1080.jpg);
+    
+    /*  Colores:    */
+    --ctituloBusqueda:rgb(0, 0, 0);             /*      Color del titulo                 */
+    --cbarraBusqueda:#d8dee9;                   /*      Color de la barra de busqueda    */
+    --cfondoCubo:rgba(0, 0, 0, 0.705);          /*      Color del fondo del cubo         */
+    --cletraCubo:white;                         /*      Color de la letra del cubo       */
+    --ciconoCubo: white;                        /*      Color del icono del cubo         */
+}
+
+
+body
+{
+    background-image: var(--imgbg);
+    background-size: cover;
+    font-family: 'Cutive Mono', monospace;
+    font-weight: 100;
+    backdrop-filter: blur(10px);
+    height: 100vh;
+}
+
+/* ----------------- Barra de busqueda ----------------- */
+.divBuscar
+{
+    padding-top: 10em;
+}
+
+.tituloBuscar
+{
+    text-align: center;
+    letter-spacing: 0.07em;
+    color: rgb(0, 0, 0);
+    color: var(--ctituloBusqueda);
+}
+.search 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.searchbar
+{
+    text-align: center;
+	border:none;
+	border-bottom: 2px solid var(--cbarraBusqueda);
+	min-width: 553px;
+	background-color: transparent;
+	color: black;
+    outline: 0;
+    margin-top: 30px;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-size:  18px;
+}
+/* ----------------- Barra de busqueda ----------------- */
+
+
+/* ----------------------- Grid ----------------------- */
+.grid-container
+{
+    margin-top: 4em;
+    grid-auto-flow: row;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: stretch;
+    grid-gap: 30px;
+    padding: 30px;
+}
+
+
+.cubo
+{
+    /* backdrop-filter: blur(10px); */
+    background-color: var(--cfondoCubo);
+    border-radius: 10px;
+    min-width: 130px;
+    height: 100px;
+
+    /* Flex */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    /* Letra */
+    color: rgba(0, 0, 0, 0);
+    letter-spacing: 0.08em;
+    text-decoration: none;
+
+    /* Efectos */
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.35);
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.cubo:hover {
+    transform: translateY(-0.2rem);
+    transition: 0.3s;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.35);
+    text-decoration: none;
+    color:var(--cletraCubo);
+}
+
+.iconito
+{
+    margin-top: 1em;
+    width: 26px;
+    height: 26px;
+    color: var(--ciconoCubo);
+}
+
+.titulito
+{
+    margin: 0;
+    margin-top: 9px;
+}
+/* ----------------------- Grid ----------------------- */
