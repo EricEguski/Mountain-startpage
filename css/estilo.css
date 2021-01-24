@@ -17,6 +17,7 @@ body
 {
     background-image: var(--imgbg);
     background-size: cover;
+    background-attachment: fixed;
     font-family: 'Cutive Mono', monospace;
     font-weight: 100;
     backdrop-filter: blur(10px);
@@ -41,6 +42,7 @@ body
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 1em;
 }
 .searchbar
 {
@@ -61,7 +63,6 @@ body
 /* ----------------------- Grid ----------------------- */
 .grid-container
 {
-    margin-top: 4em;
     grid-auto-flow: row;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -103,7 +104,7 @@ body
     transition: 0.3s;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.35);
     text-decoration: none;
-    color:var(--cletraCubo);
+    color:var(--cletraCubo)!important;
 }
 
 .iconito
@@ -120,3 +121,64 @@ body
     margin-top: 9px;
 }
 /* ----------------------- Grid ----------------------- */
+
+/* --------------------- Submenu ---------------------- */
+.submenu
+{
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: var(--cfondoCubo);
+    border-radius: 10px;
+}
+
+.iconito-submenu
+{
+    color: rgb(214, 214, 214);
+    margin: 10px;
+    transition: 0.2s;
+    /* -webkit-filter: drop-shadow( 4px 1px 2px rgba(175, 175, 175, 0.7)); */
+
+}
+
+.iconito-submenu:hover
+{
+    color: rgb(255, 255, 255);
+    filter: drop-shadow( 0px 0px 3px rgba(255, 255, 255, 0.432));
+    transform: translateY(-0.1rem);
+    transition: 0.2s;
+}
+/* --------------------- Submenu ---------------------- */
+
+/* --------------------- Dinamico --------------------- */
+.divDinamico
+{
+    display: grid;
+    grid-gap: 30px;
+    padding: 30px;
+    margin-top: 4em;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.barra
+{
+    grid-column-start: span 2;
+}
+
+.buscarBarra
+{
+    color: white;
+    text-align: center;
+	border:none;
+	border-bottom: 2px solid var(--cbarraBusqueda);
+	min-width: 100%;
+	background-color: transparent;
+    outline: 0;
+    margin-top: 30px;
+    font-size:  18px;
+}
+/* --------------------- Dinamico --------------------- */
+

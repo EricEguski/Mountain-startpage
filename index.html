@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Iconos -->
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-      <!--jQuery-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="css/estilo.css">
 
     <title>Home</title>
@@ -18,7 +22,7 @@
                 <div class="col-12">
                     <h1 id="saludos" class="tituloBuscar">BUSCAR</h1>
                     <div class="search">
-                        <form action="https://www.google.com/search" id="sb-form" method="get" target="" autocomplete="off">
+                        <form action="https://www.google.com/search" id="sb-form1" method="get" target="" autocomplete="off">
                             
                             <input class="searchbar" type="text" autofocus name="q" id="sb" placeholder="Google 🔎" > 
                             
@@ -27,8 +31,10 @@
                 </div>
                 
             </div>
+            <div class="row">
+                <!-- Empieza el grid -->
+                <div class="grid-container mx-auto my-auto col-12">
 
-                <div class="grid-container mx-auto col-12">
                     <!-- github -->
                     <a class="cubo" href="https://github.com">
                         <i class="iconito" data-feather="github"></i>
@@ -59,27 +65,61 @@
                         <i class="iconito" data-feather="twitter"></i>
                         <p class="titulito">Twitter</p>
                     </a>
+                    <!-- localhost -->
                     <a class="cubo" href="http://127.0.0.1/">
                         <i class="iconito" data-feather="terminal"></i>
-                        <p class="titulito">127.0.0.1/</p>
+                        <p class="titulito">127.0.0.1</p>
                     </a>
+                    <!-- youtube -->
                     <a class="cubo" href="https://www.youtube.com/">
                         <i class="iconito" data-feather="youtube"></i>
                         <p class="titulito">Youtube</p>
                     </a>
+                    <!-- Amazon -->
                     <a class="cubo" href="https://www.amazon.es/">
                         <i class="iconito" data-feather="package"></i>
                         <p class="titulito">Amazon</p>
                     </a>
+                    <!-- Amazon Prime -->
                     <a class="cubo" href="https://www.primevideo.com">
                         <i class="iconito" data-feather="play-circle"></i>
                         <p class="titulito">Prime</p>
                     </a>
-            
-                    
+              
+                </div>
+                <!-- Fin del grid -->
+
+
+                <div class="divDinamico my-auto col-6 mx-auto">
+                    <!-- Allkeyshop -->
+                    <a id="allkeyshop" class="cubo" href="#">
+                        <i class="iconito" data-feather="key"></i>
+                        <p class="titulito">Allkeyshop</p>
+                    </a>
+                    <!-- Opgg -->
+                    <a id="opgg" class="cubo" href="#">
+                        <i class="iconito" data-feather="users"></i>
+                        <p class="titulito">Opgg</p>
+                    </a>
+                    <!-- Barra -->
+                    <div class="cubo barra">
+                        <form class="col-12" action="" id="sb-form" method="get" target="" autocomplete="off">                
+                            <input class="buscarBarra" type="text" autofocus name="" id="sb" placeholder="Buscar en Allkeyshop 🔎" >        
+                        </form>
+                    </div>
                 </div>
 
+                <!-- Submenu -->
+                <div class="div-submenu col-12">
+                    <div class="submenu col-4 mx-auto">
+                        <i class="iconito-submenu sub-home" data-feather="home"></i> |
+                        <i class="iconito-submenu sub-search" data-feather="search"></i> |
+                        <i class="iconito-submenu sub-folder" data-feather="folder"></i> 
+                    </div>
+                </div>
+                <!-- Fin del submenu -->
 
+            </div>
         </div>
 
 </body>
@@ -89,7 +129,10 @@
 </script>
 
 <script src="js/saludo.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="js/buscar.js"></script>
+<script src="js/submenu.js"></script>
+
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </html>
