@@ -27,14 +27,14 @@ body
 /* ----------------- Barra de busqueda ----------------- */
 .divBuscar
 {
-    padding-top: 10em;
+    padding-top: 4em;
 }
 
 .tituloBuscar
 {
     text-align: center;
     letter-spacing: 0.07em;
-    color: rgb(0, 0, 0);
+    /* color: rgb(0, 0, 0); */
     color: var(--ctituloBusqueda);
 }
 .search 
@@ -182,3 +182,27 @@ body
 }
 /* --------------------- Dinamico --------------------- */
 
+#divReloj
+{
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.07em;
+    /* color: rgb(0, 0, 0); */
+    color: var(--ctituloBusqueda);
+    /* ESTILO PARA PUTOS CIEGOS */
+
+}
+
+#reloj
+{
+    font-size: 70px;
+}
+
+#fecha
+{
+    font-size: 20px;
+    margin-top: -20px;
+}
