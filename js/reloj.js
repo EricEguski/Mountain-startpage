@@ -7,16 +7,12 @@ function startTime() {
     var sec = today.getSeconds();
     ap = (hr < 12) ? "<span>AM</span>" : "<span>PM</span>";
 
-    // Formato de 12 horas 
-    // hr = (hr == 0) ? 12 : hr;
-    // hr = (hr > 12) ? hr - 12 : hr;
-
-    //Add a zero in front of numbers<10
     hr = comprobarTiempo(hr);
     min = comprobarTiempo(min);
     sec = comprobarTiempo(sec);
 
     // document.getElementById("reloj").innerHTML = hr + ":" + min + ":" + sec + " " ;
+    // No me gusta con segundos, me agobia D:
     document.getElementById("reloj").innerHTML = hr + ":" + min;
     
     var months = ['Enero', 'Febrero', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
