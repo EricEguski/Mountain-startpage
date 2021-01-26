@@ -181,6 +181,45 @@ body
     font-size:  18px;
 }
 /* --------------------- Dinamico --------------------- */
+/* --------------------- Ajustes ---------------------- */
+
+
+.divAjustes
+{
+    display: grid;
+    grid-gap: 30px;
+    padding: 30px;
+    margin-top: 4em;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.fondo
+{
+    grid-column-start: span 4;
+    color:white;
+}
+
+.url-fondo
+{
+    color: white;
+    text-align: center;
+	border:none;
+    border-bottom: 2px solid var(--cbarraBusqueda);
+    border: 0.5px solid rgba(128, 128, 128, 0.61);
+    border-radius: 5px;
+	/* min-width: 30%; */
+	background-color: transparent;
+    outline: 0;
+    margin-top: 30px;
+    font-size:  18px;
+}
+
+.label-ajustes
+{
+    text-align: right;
+}
+/* --------------------- Ajustes ---------------------- */
 
 #divReloj
 {
