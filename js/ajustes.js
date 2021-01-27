@@ -67,12 +67,14 @@ function noEnter()
     $("#url-fondo").keypress(function(e) {
         if (e.which == 13) {
             $('#url-fondo').blur();
+            return false;
         }
     });
 
     $("#txt-nombre").keypress(function(e) {
         if (e.which == 13) {
             $('#txt-nombre').blur();
+            return false;
         }
     });
 }
