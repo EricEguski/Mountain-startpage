@@ -15,8 +15,8 @@ function startTime() {
     // No me gusta con segundos, me agobia D:
     document.getElementById("reloj").innerHTML = hr + ":" + min;
     
-    var months = ['Enero', 'Febrero', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-    var days = ['Domingo', 'Lunes', 'Tue', 'Wed', 'Thu', 'Fri', 'S'];
+    var months = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'June', 'Julio', 'Augosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+    var days = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
 
     var curWeekDay = days[today.getDay()];
     var diaHoy = today.getDate();

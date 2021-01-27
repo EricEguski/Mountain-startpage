@@ -48,7 +48,7 @@ body
 {
     text-align: center;
 	border:none;
-	border-bottom: 2px solid var(--cbarraBusqueda);
+	border-bottom: 2px solid rgb(53, 53, 53);;
 	min-width: 553px;
 	background-color: transparent;
 	color: black;
@@ -57,6 +57,18 @@ body
     /* font-family: 'Open Sans', sans-serif; */
     font-size:  18px;
 }
+.searchbar::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(53, 53, 53);
+    opacity: 1; /* Firefox */
+  }
+  
+  .searchbar:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:rgb(53, 53, 53);
+  }
+  
+  .searchbar::-ms-input-placeholder { /* Microsoft Edge */
+    color:rgb(53, 53, 53);
+  }
 /* ----------------- Barra de busqueda ----------------- */
 
 
