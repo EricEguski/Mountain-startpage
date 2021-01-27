@@ -1,5 +1,5 @@
 
-
+cambiarFondo();
 // Cuando escribes en el input se guarda en localstorage y se usa en la función saludar
 $('#txt-nombre').on("input", function () 
 {
