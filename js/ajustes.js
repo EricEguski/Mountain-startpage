@@ -1,5 +1,8 @@
 
+noEnter();
 cambiarFondo();
+
+
 // Cuando escribes en el input se guarda en localstorage y se usa en la función saludar
 $('#txt-nombre').on("input", function () 
 {
@@ -57,4 +60,19 @@ function cambiarFondo()
         $('#url-fondo').val(localStorage.getItem("fondo"));
         $('body').css("background-image", "url("+localStorage.getItem("fondo")+")");
     }
+}
+
+function noEnter() 
+{
+    $("#url-fondo").keypress(function(e) {
+        if (e.which == 13) {
+            $('#url-fondo').blur();
+        }
+    });
+
+    $("#txt-nombre").keypress(function(e) {
+        if (e.which == 13) {
+            $('#txt-nombre').blur();
+        }
+    });
 }
