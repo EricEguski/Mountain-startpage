@@ -1,2 +1,2 @@
 # Mountain-startpage
-Una página de inicio para cualquier navegador
+Una página de inicio para el navegador
